@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.model.Customer;
 
-@FeignClient(name = "BACKEND")
+//@FeignClient(name = "BACKEND")
 
-//@FeignClient(value="feignclient",url="http://localhost:8080")
+@FeignClient(value="feignclient",url="http://localhost:8084")
 
 public interface feignClient {
 

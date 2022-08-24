@@ -34,7 +34,7 @@ public class Controller {
 	@CircuitBreaker(name="AllCustomersTemplate",fallbackMethod="fallback_get_AllCustomers")
 	@GetMapping("/customers")
 	public ResponseEntity<Customer[]> get_AllCustomers() throws URISyntaxException{
-		String url="http://localhost:8080/customers";
+		String url="http://localhost:8084/customers";
 		URI uri = new URI(url);
 		ResponseEntity<Customer[]> result = restTemplate.getForEntity(uri, Customer[].class);
 		logger.info("Received Data from backend");
