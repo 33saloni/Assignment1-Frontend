@@ -27,12 +27,11 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	implementation 'org.springframework.cloud:spring-cloud-starter-circuitbreaker-reactor-resilience4j'
 	
-    implementation 'io.cucumber:cucumber-java:6.8.0'
-  
-    testImplementation 'io.cucumber:cucumber-junit:6.8.0'
-   
-    implementation 'io.cucumber:cucumber-spring:6.8.0'
-	
+    implementation 'io.cucumber:cucumber-java:6.8.0' 
+     testImplementation 'io.cucumber:cucumber-junit:6.8.0'
+     implementation 'io.cucumber:cucumber-spring:6.8.0'
+     testImplementation 'io.rest-assured:rest-assured:4.5.1'
+     testImplementation 'io.rest-assured:rest-assured-all:4.5.1'
 }
 
 dependencyManagement {
