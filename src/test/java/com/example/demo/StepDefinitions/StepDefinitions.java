@@ -27,13 +27,12 @@ public class StepDefinitions {
 	  response = when().get("http://localhost:8081/feigncustomers");
 	    
 	}
-
+//githubdemo
 	@Then("the client receives status code and list of customers")
 	public void the_client_receives_status_code_and_list_of_customers() {
 		 int status = response.then().extract().statusCode();
 		 assertEquals(200,status);
 		 Customer[] customers = response.as( Customer[].class);
 		 assertTrue(customers.length>0);
-	   
 	}
 }
